@@ -16,7 +16,10 @@
                 <h2 class='title'>{{$post->title}}</h2>
                 <p class='body'>{{$post->body}}</p>
             </div>
+             @endforeach
         </div>
-        @endforeach
+       <div class='paginate'>
+            {{ $posts->links() }}
+        </div>
     </body>
 </html>
